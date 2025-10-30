@@ -1,0 +1,79 @@
+body{
+    background-color: darkred;
+}
+
+#gameTitle{    
+    float: left;
+    width: 20%;
+    padding: 20px;
+    color: white;
+    border: 2px solid black;
+}
+
+#grades{
+    float: right;
+    width: 20%;
+    padding: 20px;
+    color: white;
+    border: 2px solid black;
+}
+
+#score {
+    text-align: center;
+    color: white;
+}
+#sBoard{
+    text-align: center;
+    color: white;
+}
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid white;
+    margin: auto;
+    background-image: url(https://www.smc.edu/student-support/academic-support/transfer-center/resources/csu/images/csu-northridge.jpg);
+    background-size: cover;
+}
+
+#student {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 200px;
+    background-image: url(images/pixel-boy-student.png);
+    background-size: cover;
+}
+
+#paper {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 150px;
+    left: 550px;
+    background-image: url(images/pixel-frame-big.png);
+    background-size: cover;
+    animation: paper 1.33s infinite;
+}
+
+.animated-element {
+  animation-name: paper;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-delay: random(.50ms, 5s); 
+}
+
+@keyframes paper{
+    0%{left: 550px;}
+    100%{left: -50px;}
+}
+
+.jump-animation {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0%{top: 100px;}
+    50%{top: 75px;}
+    75%{top: 75px;}
+    100%{top: 100px;}
+}
